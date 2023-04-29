@@ -16,7 +16,7 @@ const ItemListContainer = ({ greeting }) => {
             .catch(error => {
                 console.log("Hubo un error: " + error);
             })
-    }, []);
+    }, [id]);
     return (
         <div className="container">
             <h1>{greeting}</h1>

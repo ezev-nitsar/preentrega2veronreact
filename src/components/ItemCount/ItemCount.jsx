@@ -16,12 +16,12 @@ export const ItemCount = ({ stock, inicial, onAdd }) => {
     }
     return (
         <div className='flex'>
-            <div class='d-flex justify-content-between'>
+            <div className='d-flex justify-content-between'>
                 <Button variant='danger' onClick={restar}>-</Button>
                 <h4>{cantidad}</h4>
                 <Button variant='success' onClick={sumar}>+</Button>
             </div>
-            <div class='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center'>
                 <Button variant='primary' onClick={() => onAdd(cantidad)} disabled={!stock}>Agregar al Carrito</Button>
             </div>
         </div>
